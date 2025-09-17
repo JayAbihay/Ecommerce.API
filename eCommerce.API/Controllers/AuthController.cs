@@ -16,7 +16,7 @@ namespace eCommerce.API.Controllers
             _usersService = usersService;
         }
 
-        [Route("register")] // POST: api/auth/register 
+        [HttpPost("register")] // POST: api/auth/register 
         public async Task<IActionResult> Register(RegisterRequest registerRequest)
         {
             // Check for invalid registerRequest 
